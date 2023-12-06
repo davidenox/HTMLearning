@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+    <body>
+        <h1>Links</h1>
+        <p>
+            <a href="https://github.com/davidenox" target="_blank">My git Profile</a>
+        <!-- targets : _blank, _parent, _self, _top -->
+        </p>
+        <!-- Use an image as link -->
+        <p>
+            <a href="https://github.com/davidenox">
+                <img src="img4/link.jpg" alt="Link Image"/ style="width:45px"; height="45px;"> 
+            </a>
+        </p>
+        <!-- Link to an email address -->
+        <p>
+            <a href="mailto:nocedav31@gmail.com">Email me!</a>
+            <!-- Button as a Link -->
+            <button onclick="document.location='https://github.com/davidenox'">CLICK ME</button>
+        </p>
+    </body>
+    <!-- Link Colors -->
+    <style>
+        a:link, a:visited {
+            background-color: chartreuse;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a:hover, a:active {
+            background-color: red;
+        }
+    </style>
+</html>

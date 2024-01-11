@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="it">
+    <head>
+        <title>Images</title>
+        <script src="5_func.js"></script>
+    </head>
     <h1>Random images</h1>
-    <img src="img5/duck.jpg" alt="Duck" style="width:500px"; height="600px;">
+        <img src="img5/duck.jpg" alt="Duck" style="width:500px"; height="600px;">
     <h2>GIFs</h2>
-    <img src="img5/doge.gif" alt="Doge!" style="width:148px;height:148px;">
+        <img src="img5/doge.gif" alt="Doge!" style="width:148px;height:148px;">
     <h2>Floating images</h2>
-    <p>
-    <img src="img5/doge.gif" alt="Doge" style="float:left;width:42px;height:42px;">
-    A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image. 
-    A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
-    </p>
+        <p>
+            <img src="img5/doge.gif" alt="Doge" style="float:left;width:42px;height:42px;">
+            A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image. 
+            A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+        </p>
     <h1>Image Maps</h1>
-    <p>Clicca sul becco o sugli occhiali e avrai un'approfondimento</p>
-    <img src="img5/duck.jpg" alt="Duck"
-    usemap="#duckmap" width="400" height="380">
+        <p>Clicca sul becco e avrai un'approfondimento</p>
+        <img src="img5/duck.jpg" alt="Duck"
+        usemap="#duckmap" width="400" height="380">
 
     <map name="duckmap">
         <area shape="rect"
-        coords="150,160,250,260"
-        
+        coords="250,250,380,380" href="https://it.wikipedia.org/wiki/Papero"
+        onclick="duck()">
     </map>
+    <script src="5_func.js"></script>
     <!-- work in progress -->
 </html>

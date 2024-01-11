@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html lang="it">
     <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Images</title>
         <script src="5_func.js"></script>
+        <style>
+            p {
+                background-image: url(img5/light_grey.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        </style>
     </head>
     <h1>Random images</h1>
         <img src="img5/duck.jpg" alt="Duck" style="width:500px"; height="600px;">
@@ -25,5 +36,19 @@
         onclick="duck()">
     </map>
     <script src="5_func.js"></script>
+    <!-- Pictures! -->
+    <body>
+        <h1>Pictures</h1>
+        <p>
+            <picture>
+                <source media="(max-width: 250px)" srcset="img5/duck.jpg">
+                <img src="img5/duck.jpg">
+            </picture>
+        </p>
+    </body>
+    <!-- Favicon -->
+    <h4>I added a Favicon</h4>
+    <link rel="icon" type="image/x-icon" href="img5/kekw.jpg">
+
     <!-- work in progress -->
 </html>

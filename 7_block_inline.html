@@ -11,6 +11,101 @@
                 <p> This element defines a paragraph in an HTML doc.</p>
                 <div> This element defines a section in an HTML doc.</div>
                 <p> This is a<span> span element,</span> inside a paragraph</p>
+            
+            <address>
+                Written by <a href="mailto:nocedav31@gmail.com">Me</a>.<br>
+                Visit me at:<br>
+                <a href="https://github.com/davidenox">Git</a><br>
+            </address>
+            
+            <figure>
+                <img src="img1/coding.png" alt="Coding">
+                <figcaption>Fig.1 Coding</figcaption> 
+            </figure>
+
+            <script>
+                document.write("Hello world!")
+            </script>
+
+            <noscript>Your Browser does not support JS!</noscript>
+
+            <article>
+                <h2>Google Chrome</h2>
+                <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                </article>
+                
+                <article>
+                <h2>Mozilla Firefox</h2>
+                <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+                </article>
+                
+                <article>
+                <h2>Microsoft Edge</h2>
+                <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+                </article> 
+
+                <table>
+                    <thead>
+                      <tr>
+                        <th>Month</th>
+                        <th>Savings</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>January</td>
+                        <td>$100</td>
+                      </tr>
+                      <tr>
+                        <td>February</td>
+                        <td>$80</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Sum</td>
+                        <td>$180</td>
+                      </tr>
+                    </tfoot>
+                </table> 
+                <h1>The form element</h1>
+
+                <form action="/action_page.php">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+                  
+                <p>Click the "Submit" button and the form-data will be sent to a page on the 
+                  server called "action_page.php".</p>
+
+                <form action="/action_page.php">
+                    <fieldset>
+                        <legend>Personalia:</legend>
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                        <label for="birthday">Birthday:</label>
+                        <input type="date" id="birthday" name="birthday"><br><br>
+                        <input type="submit" value="Submit">
+                        </fieldset>
+                </form>
+                <canvas id="myCanvas">
+                  Your browser does not support the canvas tag.
+                </canvas>
+                <script>
+                  let canvas = document.getElementById("myCanvas");
+                  let ctx = canvas.getContext("2d");
+                  ctx.fillStyle = "#ff0000"; // Red fill style
+                  ctx.fillRect(0,0,80,80);
+                </script>
+                <canvas id="canvas2" width="300" height="150" style="border: 1px solid grey;"></canvas>
+              <p>I drew a rectangle with canvas</p>
         </body>
     </head>
 </html>
